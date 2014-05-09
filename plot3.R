@@ -32,7 +32,7 @@ dt$Date2 <- strptime(
 # change Locale
 Sys.setlocale(category = "LC_TIME", locale = "C")
 
-# 2. making Plot 2
+# 2. making Plot 3
 
 # open PNG device
 png(
