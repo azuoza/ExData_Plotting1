@@ -29,6 +29,9 @@ dt$Date2 <- strptime(
                 tz = "EST"
                 )
 
+# change Locale
+Sys.setlocale(category = "LC_TIME", locale = "C")
+
 # 2. making Plot 2
 
 # open PNG device
@@ -51,3 +54,6 @@ plot(
 
 # closing device
 dev.off()
+
+# reset Locale to default
+Sys.setlocale(category = "LC_ALL", locale = "")
